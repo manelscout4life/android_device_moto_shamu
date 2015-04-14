@@ -37,18 +37,6 @@ PRODUCT_COPY_FILES += \
     device/moto/shamu/fstab.shamu:root/fstab.shamu \
     device/moto/shamu/ueventd.shamu.rc:root/ueventd.shamu.rc 
 
-# Kernel ramdisk files
-PRODUCT_COPY_FILES += \
-    kernel/moto/shamu/lk.ramdisk/sbin/lkconfig:root/sbin/lkconfig \
-    kernel/moto/shamu/lk.ramdisk/sbin/lkconfig:root/sbin/lk \
-    kernel/moto/shamu/lk.ramdisk/sbin/nofreq-mpd:root/sbin/nofreq-mpd \
-    kernel/moto/shamu/lk.ramdisk/sbin/stock-mpd:root/sbin/stock-mpd \
-    kernel/moto/shamu/lk.ramdisk/sbin/lkcc:root/sbin/lkcc \
-    kernel/moto/shamu/lk.ramdisk/sbin/lk-post-boot.sh:root/sbin/lk-post-boot.sh \
-    kernel/moto/shamu/lk.ramdisk/init.lk.rc:root/init.lk.rc \
-    kernel/moto/shamu/lk.ramdisk/sbin/supolicy:root/sbin/supolicy \
-    kernel/moto/shamu/lk.ramdisk/sbin/lk-selinux-mode.sh:root/sbin/lk-selinux-mode.sh
-
 # Input device files for shamu
 PRODUCT_COPY_FILES += \
     device/moto/shamu/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
